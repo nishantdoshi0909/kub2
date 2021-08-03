@@ -9,7 +9,7 @@ public class WrapperController {
 	@RequestMapping("/wrapperhello")
 	public String hello() {
 		//return "Hello World";
-		String uri = "http://helloword-api-v1:8085/hello";
+		String uri = "http://helloword-api-v1/hello";
 	    RestTemplate restTemplate = new RestTemplate();
 	    String result = restTemplate.getForObject(uri, String.class);
 	    return result; 

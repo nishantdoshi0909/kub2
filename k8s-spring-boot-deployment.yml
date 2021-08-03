@@ -28,7 +28,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 70
+    - port: 80
       targetPort: 8090
   selector:
     app: wrapper-api-v1
